@@ -1,0 +1,6 @@
+Giải thích về Tính Đa hình 
+
+Tính đa hình được áp dụng rõ nét nhất ở dòng code: nv.tinhLuong() bên trong vòng lặp for. 
+Dù biến nv có kiểu dữ liệu là NhanVien, nhưng tại thời điểm thực thi, Java sẽ tự động gọi phương thức tinhLuong() của lớp con tương ứng (FullTime hoặc PartTime). 
+Lợi ích của việc này là giúp mã nguồn linh hoạt, 
+dễ mở rộng (có thể thêm loại nhân viên mới mà không cần sửa vòng lặp) và giảm bớt việc phải kiểm tra kiểu dữ liệu thủ công bằng instanceof.
